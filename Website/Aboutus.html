@@ -1,0 +1,100 @@
+<!--Code produced by Leon Singleton-->
+<!--For all images i have used royalty/licence free website sources or i have used my own screenshotsw/images. Examples of web licence free websites i used for images include https://pixabay.com  and https://en.wikipedia.org/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sets a viewport so that the page is compatile for mobiles-->
+<!--A link to the Cascading stylesheet file is created-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leon Singleton">
+  <title>Puzzle Works</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--A link to the javascript file used for the burgermenu is created-->
+<script src="./javascript/burgermenu.js"></script>
+
+<!--Here i have used a wrapper so that the same styles can be applied to every web page for continuity across the website-->
+<!--I have also used a unique id for the body so that only specific styles are applied to this particular web page-->
+<body id ="Aboutus">
+  <div id="wrapper">
+    <header>
+<!--A block element for the burger menu is created so that it's contents can only be visible when the browser size decreases-->
+      <div class="burgermenu">
+<!--The javascript function is called here when the menu is clicked-->
+        <button onclick="menuFunction()" class="menubtn"></button>
+<!--Here i have given both a class and an id type selector to this div block, this is so that i can use the class for the style rules and the id for the javascript functionality-->     
+        <div id="menu-dropdown" class="menu-content">
+          <a href="Index.html" >Home</a>
+	        <a href="Aboutus.html">About us</a>
+          <a href="News.html">News</a></li>
+          <a href="Reccomendations.html">Reccomendations</a>
+	        <a href="Puzzlegames.html">Our Games</a>
+	        <a href="Contactus.html">Contact Us</a>
+        </div>
+      </div>
+
+<!--Here i have created a seperate block element for each of the title and logo displayed on the header of the website-->
+<!--This is so that i can apply different styles to the contents within these block elements as the size of the browser changes-->
+      <div class = "headertitle">
+	      <img src="./images/title.png" alt="Puzzle works Heading">
+	    </div>
+	    <div class = "headerlogo">
+	      <figure>
+	        <img src="./images/logo.png" alt="Puzzle works logo">
+	      </figure>
+	    </div>
+    </header>
+    
+<!--A list of the navigation links is creaated so that a user can access pages witin the website-->
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+	      <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Reccomendations.html">Reccomendations</a></li>
+	      <li><a href="Puzzlegames.html">Our Games</a></li>
+	      <li><a href="Contactus.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+<!--Here i have used two seperate sections to represent two seperate columns within a div block that specifies whether the content here should be part of a column view-->
+<!--i have used a heading to specify the name of each founder, and then floated an image alongside the description of each founder-->
+    <main> 
+      <h1>About Us (all information here is fictitious)</h1>
+      <div id="columns">
+        <section class="column1">
+		      <h2>Leon Singleton </h2>
+		      <figure>
+            <img src="./images/Founder1.jpg" alt="Picture of Leon Singleton">
+          </figure>
+          <p>Leon is an enthusiastic puzzle player who apprecaites all types of puzzle games. His favourite types of puzzle games are those that are complex and require plenty of patience and ingenuity to solve. He is a confident computer programmer and as such his role within the company is the development and maintenance of the website and the writing of puzzle reviews. This role involves making sure that all content added to the webiste is appropriate for public display.
+          </p> 
+		      <h2>James Riggs</h2>
+		      <figure>
+            <img src="./images/Founder2.jpg" alt="Picture of James Riggs">
+          </figure>
+          <p>James has being solving puzzles from a very early age, his enthusiasm for puzzles not only stretches from playing them but also designing and implementing them. His out of the box thinking have led to him several brainteaser puzzles which he used to write for a daily newspaper. Since then he has completed a degree in computer science with Games technology and now likes to implement his puzzles so that they have both desktop and mobile interaction capabilites.
+          </p> 
+		    </section>
+		    <section class="column2">
+	        <h2>Harry Lamb</h2>
+		      <figure>
+            <img src="./images/Founder3.jpg" alt="Picture of Harry lamb">
+          </figure>
+          <p>Harry is an avid journalist that loves to share his thoughts and opinions about different puzzle related topics in an unbiased manner. Not only does he love studying the effects of puzzle games on people and how to maximise their effects but he also likes to write a review of a particular game he has enjoyed now and again. His other role is to reply to all contact messages submitted by users of the website.  
+          </p> 
+		    </section>
+      </div>
+    </main>
+    
+<!--I have placed the link to my Accessibility page within a footer block element as this seems the most appropriate place for the link-->
+    <footer> 
+	    <a href="Accessibility.html">Accessibility</a>
+    </footer>
+
+  </div> 
+</body>
+</html>

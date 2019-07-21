@@ -1,0 +1,103 @@
+<!--Code produced by Leon Singleton-->
+<!--For all images i have used royalty/licence free website sources or i have used my own screenshotsw/images. Examples of web licence free websites i used for images include https://pixabay.com  and https://en.wikipedia.org/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sets a viewport so that the page is compatile for mobiles-->
+<!--A link to the Cascading stylesheet file is created-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leon Singleton">
+  <title>Puzzle Works</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--A link to the javascript file used for the burgermenu is created-->
+<script src="./javascript/burgermenu.js"></script>
+
+<!--Here i have used a wrapper so that the same styles can be applied to every web page for continuity across the website-->
+<!--I have also used a unique id for the body so that only specific styles are applied to this particular web page-->
+<body id="Contactus">
+  <div id="wrapper">
+    <header>
+<!--A block element for the burger menu is created so that it's contents can only be visible when the browser size decreases-->
+      <div class="burgermenu">
+<!--The javascript function is called here when the menu is clicked-->
+        <button onclick="menuFunction()" class="menubtn"></button>
+<!--Here i have given both a class and an id type selector to this div block, this is so that i can use the class for the style rules and the id for the javascript functionality-->            
+        <div id="menu-dropdown" class="menu-content">
+          <a href="Index.html" >Home</a>
+	        <a href="Aboutus.html">About us</a>
+          <a href="News.html">News</a></li>
+          <a href="Reccomendations.html">Reccomendations</a>
+	        <a href="Puzzlegames.html">Our Games</a>
+	        <a href="Contactus.html">Contact Us</a>
+        </div>
+      </div>
+      
+<!--Here i have created a seperate block element for each of the title and logo displayed on the header of the website-->
+<!--This is so that i can apply different styles to the contents within these block elements as the size of the browser changes-->  	
+      <div class = "headertitle">
+	      <img src="./images/title.png" alt="Puzzle works Heading">
+	    </div>
+	    <div class = "headerlogo">
+	      <figure>
+	        <img src="./images/logo.png" alt="Puzzle works logo">
+	      </figure>
+	    </div>
+    </header>
+    
+<!--A list of the navigation links is creaated so that a user can access pages witin the website-->
+   <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+	      <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Reccomendations.html">Reccomendations</a></li>
+	      <li><a href="Puzzlegames.html">Our Games</a></li>
+	      <li><a href="Contactus.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+<!--Here i have used two seperate sections to represent two seperate columns within a div block that specifies whether the content here should be part of a column view-->
+    <main> 
+      <div id="columns">
+        <section class="column1" >
+          <h1>Contact Us</h1>
+          <p>Puzzle Works</p>
+          <p>80 Johnson Avenue</p>
+          <p>Duffield</p>
+          <p>Derbyshire</p>
+          <p>DE26 8PZ</p>
+          <p>Tel:-01332 824650</p>
+          <p>Email:-PuzzleWorks@yahoo.co.uk</p>
+	      </section>
+
+        <section class="column2" >
+          <h2>Contact Form</h2>
+<!--Here i have created a form which will allow the user to submit a message to my email address, upon recieving this email i will also recieve the user's email address so that i can reply to them-->
+<!--The form also includes a button for resetting the initial properties of the form and clearing anything previously entered-->
+          <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+            <input type="hidden" name="recipient" value="lsingleton1@sheffield.ac.uk">
+            <p>
+            <label for="email"> Your Email Address:</label>
+            <input type="email" name="from" id="from" placeholder="Email here..." maxlength="36" size="12" class ="mytextfield" required>
+            </p>
+            <textarea name="comments" rows="5" cols="28" placeholder="Add your message here..." class ="mytextfield" required></textarea> 
+            <p>
+            <input type="submit" value="Submit" class ="mybutton" >
+            <input type="reset" class ="mybutton">
+            </p>
+          </form>
+	      </section> 
+      </div>
+    </main>
+    
+<!--I have placed the link to my Accessibility page within a footer block element as this seems the most appropriate place for the link-->
+    <footer> 
+	    <a href="Accessibility.html">Accessibility</a>
+    </footer>
+  </div> 
+</body>
+</html>

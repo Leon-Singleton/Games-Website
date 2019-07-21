@@ -1,0 +1,131 @@
+<!--Code produced by Leon Singleton-->
+<!--For all images i have used royalty/licence free website sources or i have used my own screenshotsw/images. Examples of web licence free websites i used for images include https://pixabay.com  and https://en.wikipedia.org/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sets a viewport so that the page is compatile for mobiles-->
+<!--A link to the Cascading stylesheet file is created-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leon Singleton">
+  <title>Puzzle Works</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--A link to the javascript file used for the burgermenu is created-->
+<script src="./javascript/burgermenu.js"></script>
+
+<!--Here i have used a wrapper so that the same styles can be applied to every web page for continuity across the website-->
+<!--I have also used a unique id for the body so that only specific styles are applied to this particular web page-->
+<body id="home">
+  <div id="wrapper">
+    <header>
+<!--A block element for the burger menu is created so that it's contents can only be visible when the browser size decreases-->
+      <div class="burgermenu">
+<!--The javascript function is called here when the menu is clicked-->
+        <button onclick="menuFunction()" class="menubtn"></button>
+<!--Here i have given both a class and an id type selector to this div block, this is so that i can use the class for the style rules and the id for the javascript functionality-->            
+        <div id="menu-dropdown" class="menu-content">
+          <a href="Home.html">Home</a>
+	        <a href="Aboutus.html">About us</a>
+          <a href="News.html">News</a></li>
+          <a href="Reccomendations.html">Reccomendations</a>
+	        <a href="Puzzlegames.html">Our Games</a>
+	        <a href="Contactus.html">Contact Us</a>
+        </div>
+      </div>
+      
+<!--Here i have created a seperate block element for each of the title and logo displayed on the header of the website-->
+<!--This is so that i can apply different styles to the contents within these block elements as the size of the browser changes-->  	
+      <div class = "headertitle">
+	      <img src="./images/title.png" alt="Puzzle works Heading">
+	    </div>
+	    <div class = "headerlogo">
+	      <figure>
+	        <img src="./images/logo.png" alt="Puzzle works logo">
+	      </figure>
+	    </div>
+    </header>
+    
+<!--A list of the navigation links is creaated so that a user can access pages witin the website-->
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+	      <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Reccomendations.html">Reccomendations</a></li>
+	      <li><a href="Puzzlegames.html">Our Games</a></li>
+	      <li><a href="Contactus.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+<!--Here i have used two three seperate sections to represent three seperate columns within a div block that specifies whether the content here should be part of a column view-->
+<!--As the size of the webpage increased I introudece some extra content to this webpage-->
+    <main> 
+     <h1>Home</h1>    
+    <div id="columns">
+      
+      <section class="column1">
+        <p> <span>Welcome </span>to Puzzle Works, we are a team of enthusiastic puzzlers who love to play puzzle games. On our website you will be able to find News stories regarding puzzles and their applications in the world. You will also be able to find out about the puzzle games we are playing currently and our reviews of them. Furthermore, we have a page that offers all of our games on offer of whcih you can play right now. Feel free to contact us with any questions you have about puzzles via our "Contact Us" page. 
+        </p>
+      </section>
+      <section class="column2">
+      <h3>Worlds Hardest Game review </h3>
+          <figure>
+            <img src="./images/Worldshardestgame.png" alt="Worlds Hardest Game">
+            <!--A screen capture from a playthrough of the worlds hardest game-->
+          </figure>
+          <p>It claims to be the world's hardest game and it does not dissapoint, it very well could be the worlds hardest game. </p>
+          <a href="Reccomendations.html">Read more here:</a>
+      </section>
+
+      <section class="column3">
+        <div class = "top5">
+          <h2>Our top five puzzle games </h2/>
+          <h3>1. Sliding Blocks Puzzle </h3>
+          <h3>2. Tic Tac Toe </h3/>
+          <h3>3. Snakes and Ladders </h3/>
+          <h3>4. Spot the Difference</h3/>
+          <h3>5. Match the Pairs </h3/>   
+        </div>
+      </section>
+    </div>
+
+<!--This section only becomes visible at a desktop resolution and is used to provide some basic information about the founders of the website-->
+    <section class = "extra">
+     <h1>Our Founders </h1/>
+      <div id="columns">
+        <section class="column1">
+          <h2>Leon Singleton </h2>
+          <figure>
+            <img src="./images/Founder1.jpg" alt="Picture of Leon Singleton">
+          </figure>
+          <p>Leon is an enthusiastic puzzle player who apprecaites all types of puzzle games. His favourite types of puzzle games are those that are complex and require plenty of patience and ingenuity to solve. </p> 
+        </section>
+         <section class="column1">
+          <h2>James Riggs</h2>
+          <figure>
+            <img src="./images/Founder2.jpg" alt="Picture of James Riggs">
+          </figure>
+          <p>James has being solving puzzles from a very early age, his enthusiasm for puzzles not only stretches from playing them but also designing and implementing them. </p> 
+        </section>
+        <section class="column1">
+          <h2>Harry Lamb</h2>
+          <figure>
+            <img src="./images/Founder3.jpg" alt="Picture of Harry lamb">
+          </figure>
+          <p>Harry is an avid journalist that loves to share his thoughts and opinions about different puzzle related topics in an unbiased manner.   </p> 
+        </section>
+      </div>
+     <a href="Aboutus.html">Find out more about our founders Here:</a>
+    </section>
+    </main>
+    
+<!--I have placed the link to my Accessibility page within a footer block element as this seems the most appropriate place for the link-->
+    <footer> 
+	    <a href="Accessibility.html">Accessibility</a>
+    </footer>
+  </div>
+</body>
+</html>

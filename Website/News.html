@@ -1,0 +1,107 @@
+<!--Code produced by Leon Singleton-->
+<!--For all images i have used royalty/licence free website sources or i have used my own screenshotsw/images. Examples of web licence free websites i used for images include https://pixabay.com  and https://en.wikipedia.org/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sets a viewport so that the page is compatile for mobiles-->
+<!--A link to the Cascading stylesheet file is created-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leon Singleton">
+  <title>Puzzle Works</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--A link to the javascript file used for the burgermenu is created-->
+<script src="./javascript/burgermenu.js"></script>
+
+<!--Here i have used a wrapper so that the same styles can be applied to every web page for continuity across the website-->
+<!--I have also used a unique id for the body so that only specific styles are applied to this particular web page-->
+<body id="news">
+  <div id="wrapper">
+    <header>
+<!--A block element for the burger menu is created so that it's contents can only be visible when the browser size decreases-->
+       <div class="burgermenu">
+<!--The javascript function is called here when the menu is clicked-->
+        <button onclick="menuFunction()" class="menubtn"></button>
+<!--Here i have given both a class and an id type selector to this div block, this is so that i can use the class for the style rules and the id for the javascript functionality-->            
+        <div id="menu-dropdown" class="menu-content">
+          <a href="Index.html" >Home</a>
+	      <a href="Aboutus.html">About us</a>
+          <a href="News.html">News</a></li>
+          <a href="Reccomendations.html">Reccomendations</a>
+	      <a href="Puzzlegames.html">Our Games</a>
+	      <a href="Contactus.html">Contact Us</a>
+        </div>
+      </div>
+      
+<!--Here i have created a seperate block element for each of the title and logo displayed on the header of the website-->
+<!--This is so that i can apply different styles to the contents within these block elements as the size of the browser changes-->		
+      <div class = "headertitle">
+	    <img src="./images/title.png" alt="Puzzle works Heading">
+	  </div>
+	  <div class = "headerlogo">
+	    <figure>
+	      <img src="./images/logo.png" alt="Puzzle works logo">
+	    </figure>
+	  </div>
+    </header>
+    
+<!--A list of the navigation links is creaated so that a user can access pages witin the website-->
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+	    <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Reccomendations.html">Reccomendations</a></li>
+	    <li><a href="Puzzlegames.html">Our Games</a></li>
+	    <li><a href="Contactus.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+<!--Here i have used two seperate articles to represent two seperate columns within a div block that specifies whether the content here should be part of a column view-->
+<!--Each news item consists of a heading, an image of a picture relating to the article along with an image caption-->
+    <main> 
+      <h1>News</h1>
+	  <div id="columns">
+	    <article class="article1">
+	      <h2> Online puzzle games versus traditional board games? </h2>
+	      <figure>
+		    <img src="./images/Board-Games.jpg" alt="Picture of a collection of board games">
+		   <!-- https://pixabay.com/en/play-board-game-monopoly-money-1538339/ -->
+		    <figcaption>Classic Monopoly board game</figcaption>
+	      </figure>
+	      <p> In recent times it has become apparent that we are gravitating more towards on-line games rather than traditional board games. This issue has been raised in a recent survey conducted by Barclaycard in 2015, 73% of parents remembered playing board games as children compared to only 44% of the children polled who said they do so now. However, of those that were polled they were not asked whether they actually enjoyed playing board games. So we can vaguely conclude that many children in the past simply played board games because since they were living in an era where there were limited technologies available to take advantage of, whereas now the explosion of recent technological advancements has allowed for more interesting ways to play games via games consoles and mobile devices. 
+	      </p> 
+	      <figure>
+            <img src="./images/angrybirds.png" alt="Picture of angry birds mobile game">
+            <!-- A screen capture from Angry birds mobile game -->
+		    <figcaption>Angry Birds mobile game</figcaption>
+	      </figure>
+	      <p>The decline in this percentage could be a cause of many factors. One major problem with some classic board games like Monopoly and Cluedo is that they are slow paced and cumbersome because of the vast amount of rules that one has to learn before playing. Furthermore, board games are simply impractical because of their size and their many fiddly pieces, it is much easier with technology these days to play a game on a phone or a tablet device. Perhaps the biggest factor as to why board games have declined is because of their cost, since it is possible to play thousands of games online for free. Another factor to consider is the fact that board games can seem incredibly tedious and repetitive because their content does not change each time you come to play them. Whereas online games are constantly being improved and adapted so that users do not get bored of playing them. An great example where this is true is in the Angry birds franchise which now contains several versions of essentially the same game that are regularly updated, yet they are all uniquely different. This approach to game making keeps players interested and goes to suggest why people do not bother with board games as much any more. 
+	      </p>
+	    </article>
+	    
+	    <article class="article2">
+	      <h2> How are the best puzzles made? </h2>
+	      <p>There are several things that puzzle designers have to condiser to develop a successful game. Puzzles that are too easy are dissapointing becasue they are not stimulating enough yet puzzles that are too hard can become frustrating. Finding the right balance is often difficult, so puzzle designers should consider implementing puzzle approaches that start easy and progressivley become harder or create a puzzle where the pereived lack of difficulty associtated with the puzzle keeps people interested. Puzzles should be a form of play that is fun, but even the best puzle games can be ruined if people do not approach them with a spirit of fun.</p>
+	      <figure>
+            <img src="./images/rubiks_cube.png" alt="Picture of a rubiks cube">
+            <!-- https://pixabay.com/en/rubik-s-cube-cube-puzzle-colors-157058/ -->
+		    <figcaption>A Rubiks Cube</figcaption>
+	      </figure>
+		  <p>Perhaps the best example of a puzzle that seems simple yet is tortourously difficult is that of the Rubik's cube where the goal is to set each face of the cube to one colour. The reason this puzzle is so well designed is because the the user can enjoy the process of achieving different objectives such as completing one or two faces without actually completing the main goal. Another great feature of this puzzle game is that players manipulate the puzzle and interact with it in three dimensions which feels god since it is awkward to manipulate a three dimensional object using only two dimensions offered by typical two dimensional screen controls. The rubik's cubes success also comes down to its repeatability, as those with the capability of solving it can impressively show off their skills to others. As such puzzle designers should aim to take something that seems like a simple solvable task and as a rule of thumb turn it into something difficult. 
+		  </p>
+	    </article>
+	  </div>
+    </main>
+    
+<!--I have placed the link to my Accessibility page within a footer block element as this seems the most appropriate place for the link-->
+    <footer> 
+      <a href="Accessibility.html">Accessibility</a>
+    </footer>
+
+  </div> 
+</body>
+</html>

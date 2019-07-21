@@ -1,0 +1,114 @@
+<!--Code produced by Leon Singleton-->
+<!--For all images i have used royalty/licence free website sources or i have used my own screenshotsw/images. Examples of web licence free websites i used for images include https://pixabay.com  and https://en.wikipedia.org/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sets a viewport so that the page is compatile for mobiles-->
+<!--A link to the Cascading stylesheet file is created-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leon Singleton">
+  <title>Puzzle Works</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--A link to the javascript file used for the burgermenu is created-->
+<script src="./javascript/burgermenu.js"></script>
+
+
+<!--Here i have used a wrapper so that the same styles can be applied to every web page for continuity across the website-->
+<body>
+  <div id="wrapper">
+    <header>
+<!--A block element for the burger menu is created so that it's contents can only be visible when the browser size decreases-->
+      <div class="burgermenu">
+<!--The javascript function is called here when the menu is clicked-->
+        <button onclick="menuFunction()" class="menubtn"></button>
+<!--Here i have given both a class and an id type selector to this div block, this is so that i can use the class for the style rules and the id for the javascript functionality-->            
+        <div id="menu-dropdown" class="menu-content">
+          <a href="Index.html" >Home</a>
+	        <a href="Aboutus.html">About us</a>
+          <a href="News.html">News</a></li>
+          <a href="Reccomendations.html">Reccomendations</a>
+	        <a href="Puzzlegames.html">Our Games</a>
+	        <a href="Contactus.html">Contact Us</a>
+        </div>
+      </div>
+      
+<!--Here i have created a seperate block element for each of the title and logo displayed on the header of the website-->
+<!--This is so that i can apply different styles to the contents within these block elements as the size of the browser changes-->  	
+      <div class = "headertitle">
+	      <img src="./images/title.png" alt="Puzzle works Heading">
+	    </div>
+  	  <div class = "headerlogo">
+	      <figure>
+	        <img src="./images/logo.png" alt="Puzzle works logo">
+	      </figure>
+	    </div>
+    </header>
+    
+<!--A list of the navigation links is creaated so that a user can access pages witin the website-->
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+	      <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Reccomendations.html">Reccomendations</a></li>
+	      <li><a href="Puzzlegames.html">Our Games</a></li>
+	      <li><a href="Contactus.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+<!--Here i have used two seperate sections to represent two seperate columns within a div block that specifies whether the content here should be part of a column view-->
+<!--Similar to the news page, each game item includes a heading, a description of the game and a corresponding picture of the game being described-->
+    <main> 
+      <h1>Our Puzzle Games</h1>
+      <div id="columns">
+        <section class="column1">
+          
+            <h2>Spot the Difference</h2>
+          <figure>
+            <img  src="./images/Spotdifference.png" alt="A Spot the Difference Game">
+            <!-- Screen capture from "What Diff?" mobile game -->
+          </figure>
+          <p>The spot the difference puzzle game consists of two images that seem similar yet are deceptively different. The two images will contain slight differences between eachother which as the player you have to pinpoint where the differences between the two images are. The aim of the puzzle is to find every difference between the two images.</p> 
+          <a href="SpotDifference.html">Play this game here:</a>
+          <h2>Sliding Blocks Puzzle</h2>
+          <figure>
+            <img src="./images/Slidingblocks.png" alt="A Sliding Blocks Game">
+            <!-- https://en.wikipedia.org/wiki/Sliding_puzzle#/media/File:Batgirl.gif -->
+          </figure>
+          <p>A sliding blocks puzzle consists of an image that is sperated into several pieces that are placed within a grid as block pieces. Within the grid one block space, where you would expect a part of the image to go is left blank. This is so that when the user clicks one of the blocks surrounidng this empty position then that block will move into that position and its original space will become blank. The aim of the puzzle is to re-construct the original image.</p>
+          <h2>Snakes and Ladders</h2>
+          <figure>
+            <img src="./images/Snakesladders.png" alt="A Snakes and Ladders Game">
+            <!-- Screen capture from Snakes and ladders king mobile game -->
+          </figure>
+          <p>Snakes and ladders is a tradtional two or more player board game where the players take it in turns to roll a dice and then move their corresponidng piece by that many places. The winner is the first player to reach the end of the game board. However, this is harder than it seems because if a player lands on the head of a snake they have to move thir piece to the end of the snake. In contrast if a player's piece lands at the bottom of a ladder then they have to move their piece to the top of the ladder. </p> 
+        </section>
+   
+        <section class="column2">
+          <h2>Tic Tac Toe</h2>
+          <figure>
+            <img src="./images/tictactoe.png" alt="A Tic Tac Toe Game">
+            <!-- https://en.wikipedia.org/wiki/Tic-tac-toe#/media/File:Tic_tac_toe.svg -->
+          </figure>
+          <p>Tic Tac Toe otherwise known as Noughts and Crosses is a two player game whereby each player chooses between being the player using crosses(X) or Noughts(O) and then take it in turns to place one of their pieces on a 3x3 grid. It is a quick and simple game that can be played between two people quite easily jsut using pen and paper. The winner of the game is the person who is able to create a row, column or diagonal connection between three of their corresponding pieces.</p> 
+          <h2>Match The Pairs</h2>
+          <figure>
+            <img src="./images/Matchpairs.png" alt="A Match the Pairs Game">
+            <!-- Screen captures from "Finding pair" mobile game -->
+          </figure>
+          <p>Match the pairs is a game where there are a nubmer of cards placed face-down, each card must have another card that is exactly the same also placed down. It can be played as s singleplayer game or two player game. The player/players have to flip two cards at a time to check if the cards are the same, if they are the same then they keep the pair, if they are not the same then they turn them both back over. A player can have another turn if they successfully match a pair. The game is over when all pairs have successfully been matched and the winner if there are two or more players is the person with the most pairs. It is a great game for training ones memory as the best players are those that can remember the positions of previously turned over cards.  </p> 
+        </section>
+      </div>
+    </main>
+
+<!--I have placed the link to my Accessibility page within a footer block element as this seems the most appropriate place for the link-->
+    <footer> 
+	    <a href="Accessibility.html">Accessibility</a>
+    </footer>
+  </div> 
+</body>
+</html>

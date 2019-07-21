@@ -1,0 +1,124 @@
+<!--Code produced by Leon Singleton-->
+<!--For all images i have used royalty/licence free website sources or i have used my own screenshotsw/images. Examples of web licence free websites i used for images include https://pixabay.com  and https://en.wikipedia.org/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Sets a viewport so that the page is compatile for mobiles-->
+<!--A link to the Cascading stylesheet file is created-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Leon Singleton">
+  <title>Puzzle Works</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--A link to the javascript file used for the burgermenu is created-->
+<script src="./javascript/burgermenu.js"></script>
+
+<!--Here i have used a wrapper so that the same styles can be applied to every web page for continuity across the website-->
+<!--I have also used a unique id for the body so that only specific styles are applied to this particular web page-->
+<body id="reccomendations">
+  <div id="wrapper">
+    <header>
+<!--A block element for the burger menu is created so that it's contents can only be visible when the browser size decreases-->
+      <div class="burgermenu">
+<!--The javascript function is called here when the menu is clicked-->
+        <button onclick="menuFunction()" class="menubtn"></button>
+<!--Here i have given both a class and an id type selector to this div block, this is so that i can use the class for the style rules and the id for the javascript functionality-->            
+        <div id="menu-dropdown" class="menu-content">
+          <a href="Index.html" >Home</a>
+	        <a href="Aboutus.html">About us</a>
+          <a href="News.html">News</a></li>
+          <a href="Reccomendations.html">Reccomendations</a>
+	        <a href="Puzzlegames.html">Our Games</a>
+	        <a href="Contactus.html">Contact Us</a>
+        </div>
+      </div>
+      
+<!--Here i have created a seperate block element for each of the title and logo displayed on the header of the website-->
+<!--This is so that i can apply different styles to the contents within these block elements as the size of the browser changes-->  	
+      <div class = "headertitle">
+	      <img src="./images/title.png" alt="Puzzle works Heading">
+	    </div>
+	    <div class = "headerlogo">
+	      <figure>
+	        <img src="./images/logo.png" alt="Puzzle works logo">
+	      </figure>
+	    </div>
+    </header>
+    
+<!--A list of the navigation links is creaated so that a user can access pages witin the website-->
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+	      <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Reccomendations.html">Reccomendations</a></li>
+	      <li><a href="Puzzlegames.html">Our Games</a></li>
+	      <li><a href="Contactus.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+
+<!--Here i have used two seperate sections to represent two seperate columns within a div block that specifies whether the content here should be part of a column view-->
+    <main> 
+      <h1>Reccomendations</h1>
+      <div id="columns">
+<!--Each reccomendation item consists of a heading, an image of the game being reccomended, the reccomendation itself and a link to a website where someone can get the game and play it-->
+        <section class = "column1">
+	       <h2>Worlds Hardest Game</h2>
+          <figure>
+            <img src="./images/Worldshardestgame.png" alt="Worlds Hardest Game">
+          </figure>
+          <p>It claims to be the world's hardest game and it does not dissapoint, it very well could be the worlds hardest game. The game begins reasonably simple, as the player you have to move your red square from the first green safe zone to the last green safe zone. However yo must do so by avoiding thee moving obstacles in your path. The game becomes progressivley harder as the levels are completed to the point where it seems impossible to complete. The game requires lots of concentration and logical thinking so as to predict the movements of obstacles during the game so that they can be avoided. The game keeps a track of the deaths that you have had during your play of the game, and this is  a great way to be able to compare with friends whos the better player, along with who gets to the highest level of course. The game is available to play on the web in various locations and a link to one is provided below: 
+          </p>
+         <a href="http://www.worldshardestgame.org/">Play Worlds Hardest Game here</a>
+         <!--A screen capture from a playthrough of the worlds hardest game-->
+         <h2>Bee Brilliant</h2>
+          <figure>
+            <img src="./images/Beebrilliant.jpg" alt="Bee Brilliant Game">
+               <!--A screen capture from a playthrough of Bee Brilliant mobile game-->
+          </figure>
+          <p>Bee brilliant is a game that is a great for kids, it is all about exploring the world of crazy bees and cheeky spiders. The aim is to connect the colourful lines of bees, in order to release the bees that are frozen. The music is extremely catchy and can be funny at times especially after each time you complete a level. There are 155 levels to complete so the game becomes very addictive and progressively more challenging, the more you play the more addicted you become. I feel it has beneifts to anyone that plays it as it requires the use of ones logical reasoning in order to connect as many bees as possible in a single instance so that you can generate a high enough score to unlock the following level. The game is available to play from both the android and IOS appstores and links are provided below:
+          </p> 
+           <a href="https://itunes.apple.com/gb/app/bee-brilliant/id888251661?mt=8">Get Bee Brilliant here (IOS)</a>
+         <br>
+         <a href="https://play.google.com/store/apps/details?id=dk.tactile.beebrilliant&hl=en">Get Bee Brilliant here (Android)</a>
+  
+        </section>
+
+        <section class = "column2">
+
+        <h2>Super Sharp</h2>
+         <figure>
+            <img src="./images/Supersharp.png" alt="Super Sharp Game">
+             <!-- Screen captures from a playthrough of Super Sharp-->
+          </figure>
+          <p>Super sharp is one of my favourite games! It is a game where the player has to judge where to cut a series of blocks in order to hit the different colour co-ordinated blocks. As you go through the levels the difficulty increases, increasing the level of logic that you have to apply in order to solve a level. It is exceptionally good for stimulating ones logic and reasoning abilities whilst having to drop, bounce and swing objects in a fun and amusing way. It is a simple yet effective game that is appropriate for all ages. The game is available from the ios appstore at: 
+          </p> 
+         <a href="https://itunes.apple.com/gb/app/super-sharp/id1033873301?mt=8">Get Super Sharp here</a>
+
+         <h2>Two Dots</h2>
+          <figure>
+            <img src="./images/Twodots.png" alt="Bee Brilliant Game">
+            <!-- Screen captures from a playthrough of Two Dots-->
+          </figure>
+          <p>Two dots is a game where as the player ypou have to connect the coloured dots together so that other dots will fall into a desirable position. The aim is to try and make as mny 2x2 squares as possible as these will will destroy every dot of that corresponing colour which has maximum effect. The game offers hundreds of levels, each progressively getting more difficult and adding new features every now and again in order to keep the game interesting. This game is great for passing time and can be played countless times since its re-playabity factor will keep you wanting more. This is certainly a game that mut be reccomened to anyone unless that someone is worried they may start spending too much time puzzling! The game is available to play from both the android and IOS appstores and links are provided below:
+          </p> 
+         <a href="https://itunes.apple.com/gb/app/two-dots/id880178264?mt=8">Get Two Dots here (IOS)</a>
+         <br>
+         <a href="https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid&hl=en">Get Two Dots here (Android)</a>
+
+        </section> 
+
+      </div>
+    </main>
+
+<!--I have placed the link to my Accessibility page within a footer block element as this seems the most appropriate place for the link-->
+    <footer> 
+	    <a href="Accessibility.html">Accessibility</a>
+    </footer>
+
+  </div> 
+</body>
+</html>

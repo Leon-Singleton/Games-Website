@@ -1,0 +1,501 @@
+/* Code produced by Leon Singleton */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+canvas { 
+  border: 1px solid gray;
+}
+
+/* These two following rules are used to hide the 'extra' content that is loaded once the webpage reaches a certain width
+the contnet includes the information about the founders and a sampl reccomendation */
+.extra {
+display:none;
+}
+
+#home .column2 {
+display:none;
+}
+
+/* Here i have styled the div class containing the list of the five most popular games  */
+.top5 {
+  background-image:url('../images/content-bg.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding-right:5px;
+}
+
+.top5 h2 {
+  padding-left:15px;
+  text-align: center;
+}
+
+/* The default properties for all h3 headings are set here*/
+h3 {
+  padding-bottom: 5px;
+  color: #4C9CF1;
+  font-size: 16px;
+  text-align:center;
+}
+
+/* This span style is used to set the style of the first word contained within the first paragraph 
+of the home page in order to make it stand out. */
+span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #4C9CF1;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Here i have styled the main rules that affect the whole web page */
+/* I have set a maximum width for the website so that webpages do not become distorted on larger screen displays */
+/* The background for the webpage was designed using a gradient effect in photoshop which then repeats itself */
+body { 
+  background-image:url('../images/bluegradient.jpg');
+  background-size: 60px, 10px;
+  font-family: Calibri, sans-serif;
+  color: black; 
+  max-width: 1500px; 
+  padding-top:5px;
+  margin:auto;
+}
+
+/* the default font sizes and colours of different elemetns are set */
+body a {
+  color: #0645AD;
+}
+
+h1, h2 {
+  color: #4C9CF1;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h1 {  
+  font-size: 1.4em;
+}
+
+p {
+  font-size:0.9em;
+  margin-bottom: 0.5em;
+}
+
+#Contactus p {
+  font-weight: bold;
+  color: #4C9CF1;
+}
+
+/* Here i have styled the apperances of the buttons and text fields of my contact form to make 
+them look more fitting with the style of the website */
+.mybutton {
+  background-color: #4C9CF1; 
+  border: none;
+  color: white;
+  padding: 3px 12px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.mytextfield {
+  padding: 3px 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~wrapper~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* i have used a wrapper tag style so that all content on every web page is part of a 
+container that is displayed exactly the same*/
+#wrapper {
+  background-image:url('../images/content-bg.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: auto;
+  margin: 0px auto;
+  border: 1px #4C9CF1 solid;
+}
+
+header{
+  width: auto;	
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* I have used a flex box for the header of the website so that the logo and header title 
+always fill a certain percentage width of the header as the webpage is resized */
+header {
+  display:flex;
+  height:3.5em;
+  flex-direction:row;
+}
+
+/* The title of the is sized so that it always take up 80% of its parent conatainer */
+.headertitle{
+  width:80%;
+}
+
+.headertitle img{
+  max-width:100%;
+  height: 80%;
+  margin: 0.5em 0 0.5em 0;
+}
+
+header figure {
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* The block element containing the logo within the header of the website is floated right 
+and is resized to always take up 20% of its parent conatainer */
+.headerlogo {
+  width: 20%;
+  float:right;
+  padding-right:1%;
+}
+
+/* The logo contained within its block element has its size set and is floated to the right of its container */
+.headerlogo img {
+  float:right;
+  height:55px;
+  width:55px;
+  max-width:100%;
+}
+  
+/* These styles apply to the burger menu of the website */
+.menubtn {
+  background-image:url('../images/burger-icon.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 15px 0 0;	
+  width:45px;
+  height:35px;
+  border: none;
+  cursor: pointer;
+}
+
+/* These styles here are used to position the contents of the dropdown content when the burger menu icon is clicked */
+.burgermenu {
+  padding: 0 1% 0 1%;
+  position: relative;
+  display: inline-block;
+}
+
+/* These styles apply to the dropdown content which are displayed after the burger menu icon is clicked  */
+.menu-content {
+  display: none;
+  position: absolute;
+  background-image:url('../images/content-bg.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* These styles apply to the text links within the dropdown menu */
+.menu-content a {
+  color: #4C9CF1;
+  font-weight: bold; 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* The colour of a link within the dropdown menu changes as the user hovers over it */
+.menu-content a:hover {
+  background-color: #d8f0f3;
+}
+
+/* This class is used to show the drop down menu when the user clicks on the burger menu button, 
+javascript is used to add to this class when the menu button is clicked */
+.showmenu {
+  display:block;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* These styles are applied to the default navigation bar that spans across the top of the page wonce it reaches a certain size, 
+this is why its display property is set as none so that it is not displayed at the same time as the burger menu*/
+nav {
+  display:none;
+  color: #4C9CF1;
+  border-bottom: 3px #4C9CF1 solid;
+  font-weight: bold; 
+  font-size: 1.05em;
+  height:35px;
+}
+
+/* This style removes the bullet points from the list items of the navigation lniks */
+nav ul {  
+  list-style: none;
+}
+
+/* each list item (nav link) is set to display on one line rather than displaying on one line each */
+nav ul li {
+  display: inline;
+  padding-right: 0.25%;
+}
+
+/* These stles apply to Each link within the naviagtion bar  */
+nav a {
+  margin: 5px 5px 0;	
+  text-decoration: none;
+  outline: none;
+  color: #4C9CF1;
+}
+
+/* The colour of a link within the navigation menu changes as the user hovers over it */
+nav a:hover { 
+  color: #444;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* A default flex box is applied to main content area of the webiste so that everything within 
+it is set sa one default column view */
+main {
+  padding: 0 5% 0 5%;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Every figure containing an image shares the same propertis and takes up a width of 40% of its 
+parent container so that the image witihn it scales as the webpage scales */
+main figure {
+  width: 40%;
+  max-width: auto;
+  float: right;
+  margin: 0.5em 0 0.5em 4%;
+}
+
+/* Every image will onyl ever scale to its actual size rather than scaling to fit the figure 
+it contains to stop an image becoming distorted in qualtity */
+main figure img {
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* The text used as a caption for the pictures used within my website is set so that it differs 
+from the standard styles of text displayed on the web pages */
+figcaption {
+  font-size:0.8em;
+  text-align:center;
+  color: #4C9CF1;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+  clear: both;
+  font-size: 0.75em;
+  text-align: center;
+  border-top: 1px solid #4C9CF1;
+  padding: 3px 10%;
+}
+
+footer a {
+  color: #0645AD;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~media rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* These media rules apply CSS styles when the size of the webpage becomes a certain size as specified per media rule */
+
+@media only screen and (min-width: 565px) {
+
+#Aboutus #columns figure  {
+  float: right;
+  width:100%
+}
+
+/* For the contact page i have set it so that the content displayed on the page becomes 
+two seperate columns so as to reduce the amount of empty space on the page */
+#Contactus main #columns{
+  display:flex;
+  flex-direction:row;
+}
+
+#Contactus .column1 {
+  width: 47.5%;
+}
+  
+#Contactus .column2 {
+  width: 47.5%;
+  padding-left: 5%;
+}
+
+}
+
+@media only screen and (min-width: 580px) {
+
+/* The size of the webpage title becomes bigger and is indented from the left of its parent container */
+.headertitle img{
+  max-width:100%;
+  height: 100%;
+  margin: 0.5em 0 0.5em 0;
+  padding-left:10px;
+}
+
+/* All p element font size is increased */
+p {
+  font-size:1em;
+}
+	
+/* The burger menu is no longer displayed and becomes replaced by the navigation bar which spans across the web page */
+.burgermenu {
+  display: none;
+}
+
+nav {
+  display:block;
+}
+
+/* The burger menu is no longer displayed and becomes replaced by the navigation bar which spans across the web page */
+#home main #columns{
+  display:flex;
+  flex-direction:row;
+}
+
+#home .column1{
+  width:70%;
+}
+
+#home .column3 .top5{
+  max-width: 250px;
+  float:right;
+}
+
+}
+
+@media only screen and (min-width: 700px) {
+
+/* the size of the logo on a webpage increases so that looks more inline with the scale of everything else displayed */
+.headerlogo img {
+  height:95px;
+  width:95px;
+}
+
+}
+
+@media only screen and (min-width: 800px) {
+
+/* These rules apply to the content within the block containing inforamtion about the founders */
+.extra {
+  text-align:center;
+  display:block;
+}
+
+.extra a {
+  color: #0645AD;
+}
+
+/* The widths of the columns within the 'extra' block are set along with the width the figures take up of each column*/
+#home main .extra #columns{
+  display:flex;
+  flex-direction:row;
+}
+#home .extra .column1 {
+  text-align:left;
+  width: 33%;
+}
+
+#home .extra figure {
+  float:left;
+  width:40%;
+  margin: 0.5em 4% 0.5em 0%;
+}
+
+#home .extra figure img {
+  float:left;
+}
+
+/* The wrapper which contains rules applynig to all content on the web page has its width set to 85% so that the background of the webpage
+ becomes visible to the right and left of the container. It also ensures that al content does not get too wide as the page becomes wider.  */
+#wrapper {
+  width: 85%;
+}
+
+h1 {  
+  font-size: 1.75em;
+} 
+
+/* The width that the picture of each founder takes up is decreased so that that scale better with the size of the webpage */
+#Aboutus #columns figure  {
+  float: right;
+  width:22%
+}
+
+/* Introduces columns to webpages */
+main #columns{
+  display:flex;
+  flex-direction:row;
+}
+
+/* The width of the columns are set so that there is a 5% width between them at all times so it is easy 
+to distintively tell the difference between the content of the seperate columns */
+.column1 {
+  width: 47.5%;
+}
+  
+.column2 {
+  width: 47.5%;
+  padding-left: 5%;
+}
+
+
+#news main .article1 {
+  width: 47.5%;
+}
+
+#news main .article2 {
+  width: 47.5%;
+  padding-left: 5%;
+}
+}
+
+@media only screen and (min-width: 930px) {
+
+/* Introduces columns to webpages */
+#home .column1 {
+ width: 40%;
+}
+
+/* At this browser width the sample reccomendation becomes visible and the width of the figure within it is set to a percentage 
+width of its parent element, in this case column 2*/
+#home .column2 {
+  display:block;
+  width: 25%;
+  padding: 0% 5% 0% 5%;
+}
+
+#home .column2 figure {
+  width: 55%;
+}
+
+/* As the size of the web page increases, i increase the size of the naviagtion links and the spacing between them */
+nav {
+  font-size: 1.2em;
+}	
+  
+nav ul li {
+  padding-right: 2%;
+} 
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */	
+/* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
